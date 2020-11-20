@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="landingpage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Handlee&display=swap" rel="stylesheet">
+    <title>Ethno Fish & Grill Restauran</title>
+  </head>
+  
+  <body>
+    <div class="grid-container">
+      <header id="header">
+        <div id="logo">
+          <div id="img-div">
+            <img id="header-img" src="https://iili.io/31GdWx.png" alt="logo image" /> </div>
+          <div id="social">
+            <a href="https://www.facebook.com/EthnoRestaurant/" target="_blank" class="fa fa-facebook fa-lg"></a>
+            <a href="https://www.instagram.com/ethnoburgas/" target="_blank" class="fa fa-instagram fa-lg"></a>
+          </div>
+  
+          <p id="logo-p">Ethno fish & grill restaurant</p>
+        </div>
+  
+        <nav id="nav-bar">
+          <ul>
+            <li id="li1">
+              <a href="#menu" class="nav-link">Specialties</a>
+            </li>
+            <li id="li2">
+              <a href="#about-us" class="nav-link">Athmosphere</a>
+            </li>
+            <li id="li3"><a href="#book" class="nav-link">Book a table</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <section id="about-us" class="section">
+        <h2>Enjoy a fine athmosphere and great service!</h2>
+  
+        <img class="about-us-img" src="https://iili.io/3GJTpj.jpg" alt="restaurant photo">
+        <img class="about-us-img" src="https://iili.io/3GJATx.jpg" alt="table photo" />
+      
+        <!-- <img class="about-us-img" src="https://iili.io/3GJIkb.jpg" alt="restaurant photo">-->
+        <div id="video-section">
+          <h2 id="video-p"> See our customer reviews!</h2>
+          <iframe id="video" src="https://www.youtube.com/embed/hxrbjW-9J_s?start=20&mute=1" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+        </div>
+  
+      </section>
+      <section id="menu" class="section">
+        <h2 id="featured-menu"> Featured menu</h2>
+        <div id="menu-container">
+        <div class="food">
+          <img class="food-image" src="https://iili.io/2kG02R.jpg" alt="delicious food" />
+          <p class="food-p">Fish specialties</p>
+        </div>
+        <div class="food">
+          <img class="food-image" src="https://iili.io/2hIj2V.jpg" alt="delicious food" />
+          <p class="food-p">Homemade pasta</p>
+        </div>
+        <div class="food">
+          <img class="food-image" src="https://iili.io/2hINkP.jpg" alt="delicious food" />
+          <p class="food-p">Fresh salads</p>
+        </div>
+        <div class="food">
+          <img class="food-image" src="https://iili.io/2kGXQn.jpg" alt="cace photo" />
+          <p class="food-p">Delightful desserts</p>
+        </div>
+        </div>
+      </section>
+  
+      <section id="book" class="section">
+        <h2 class="book-p">Don't wait and book your table now!</h2>
+        <!-- <div id="book-flex">
+            <img id="book-img" src="https://iili.io/2hIwYB.jpg" alt="plate with food"> -->
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <div class="form-group">
+            <label for="name">Name
+              <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control" required />
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="email">
+              E-mail<input type="email" id="email" name="email" placeholder="Enter your e-mail" required class="form-control" /></label>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 0888123456" required class="form-control" />
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="booking-time">Date and time<input type="datetime-local" id="booking-time" placeholder="Enter date and time" name="booking-time" class="form-control" /></label>
+          </div>
+          <div class="form-group">
+            <label for="people">Number of people<input type="number" id="people" placeholder="Number of people" name="people" min="1" max="20" class="form-control" /></label>
+          </div>
+          <div>
+            <input id="submit" type="submit" value="Book now" class="btn" />
+          </div>
+        </form>
+      </section>
+      <section id="follow">
+        <p>
+          Weekly lunch menu! Special seasonal and holiday offers! Stay up to date and
+          follow us on
+          <a class="social-link" href="https://www.facebook.com/EthnoRestaurant/" target="_blank">
+            Facebook</a>
+          or
+          <a class="social-link" href="https://www.instagram.com/ethnoburgas/" target="_blank">Instagram</a>!
+        </p>
+      </section>
+    </div>
+  </body>
+
+
+</html>

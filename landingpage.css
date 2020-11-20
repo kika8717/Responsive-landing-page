@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 280px;
+}
+.grid-container {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "menuu"
+    "about"
+    "book"
+    "follow";
+}
+.section {
+  padding-top: 132px;
+  margin-bottom: -132px;
+  text-align: center;
+}
+
+h2 {
+  margin: 2rem;
+  font-size: 2rem;
+  color: #394480;
+  font-weight: 400;
+}
+/* header elemens*/
+#header {
+  font-size: 18px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #394480;
+  font-weight: 500;
+  color: #fff;
+  grid-area: header;
+  margin-top: 0;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d78521;
+  width: 100%;
+  flex-wrap: wrap;
+}
+nav > ul > li {
+  list-style-type: none;
+  display: inline-block;
+  text-align: left;
+  margin: 0 1.5rem 0 0;
+}
+
+#li3 {
+  margin-right: 0rem;
+}
+li:hover {
+  text-decoration: underline;
+}
+#logo {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+#logo-p {
+  text-transform: uppercase;
+  max-width: 50%;
+}
+
+#img-div {
+  width: 70px;
+  height: 70px;
+  margin: 0.5rem;
+}
+
+#header-img {
+  border-radius: 15%;
+  width: 70px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #fff;
+}
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.nav-link:active {
+  color: #d78521;
+}
+
+#social {
+  margin-left: 5rem;
+  position: absolute;
+  right: 0.7rem;
+  top: 0.5rem;
+}
+.fa {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/*sections*/
+
+#about-us {
+  text-align: center;
+  grid-area: about;
+}
+.about-us-img {
+  width: 90%;
+  height: auto;
+  margin: 1rem;
+}
+
+#video {
+  width: 90%;
+  max-width: 560px;
+  min-height: 315px;
+  margin: 1rem;
+}
+
+#menu {
+  grid-area: menuu;
+}
+#menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+
+.food {
+  
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #001233;
+  color: #d78521;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  text-transform: capitalize;
+  border-radius: 3%;
+
+  max-width: 90%;
+  margin: 1rem;
+}
+
+.food-image {
+  border-radius: 50%;
+  max-width: 90%;
+  margin: 1rem 1rem 0rem;
+  box-shadow: 1px 2px 6px #888;
+}
+.food-p {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#book {
+  grid-area: book;
+  display: flex;
+  flex-direction: column;
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  background-color: #394480;
+  color: #fff;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 500px;
+  padding: 1rem;
+  text-align: left;
+  margin: 0 auto 2rem;
+}
+input,
+#submit,
+label {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.25rem;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  display: block;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  text-align: center;
+  height: 2.375rem;
+  padding: 0 1.5rem;
+  background-color: #d78521;
+  color: #fff;
+}
+.btn:hover {
+  border: solid 2px #fff;
+}
+
+#follow {
+  grid-area: follow;
+  background-color: #d78521;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 4rem;
+  padding: 1.2rem;
+}
+.social-link {
+  color: #fff;
+}
+#follow > p {
+  font-size: 20px;
+  padding: 0 1rem;
+}
+/* tablet and desktop version*/
+@media only screen and (min-width: 731px) {
+  .section {
+    padding-top: 70px;
+    margin-bottom: -70px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #header {
+    background-image: url("https://iili.io/38x5T7.jpg"),
+      linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+    background-color: #787674;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 760px;
+    max-height: 100%;
+    background-size: cover;
+    position: static;
+    justify-content: center;
+  }
+  #logo {
+    flex-direction: row;
+    align-self: center;
+    text-align: center;
+    font-size: 2.7rem;
+    align-items: center;
+    padding: 0 1rem;
+    text-shadow: 1px 1px 5px #0a0a0a;
+  }
+  #logo-p {
+    max-width: 100%;
+    font-size: 2.9rem;
+  }
+  #social {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: initial;
+    margin: 0;
+    font-size: initial;
+    max-width: 40%;
+  }
+  #img-div {
+    width: 80px;
+    height: 80px;
+    justify-self: flex-end;
+    position: absolute;
+    left: 5px;
+    top: 60px;
+  }
+  #header-img {
+    width: 100%;
+  }
+  #menu {
+    margin-top: 0;
+  }
+
+  .food {
+    max-width: 40%;
+    font-size: 1.8rem;
+  }
+
+  #nav-bar {
+    text-align: right;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    height: 55px;
+    padding: 0 1rem;
+    background-color: #394480;
+  }
+
+  #about-us {
+    max-width: 90%;
+    margin: 30px auto -70px;
+  }
+  .about-us-img {
+    max-width: 500px;
+    max-width: 40%;
+  }
+
+  #video {
+    height: 315px;
+    width: 560px;
+    margin: 2rem 2rem 2rem 0;
+  }
+  #video-section {
+    display: flex;
+    background-color: #394480;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 2rem;
+  }
+  #video-p {
+    padding: 0.5rem;
+    color: #fff;
+    margin: auto;
+  }
+  #book {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url("https://iili.io/3vqU1p.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-clip: content-box;
+    padding-top: 132px;
+    height: 100%;
+    margin: 1rem 0;
+  }
+
+  #form {
+    width: 40%;
+    float: left;
+    margin: 0 1rem;
+    align-self: flex-start;
+  }
+  .book-p {
+    display: flex;
+    font-size: 2rem;
+    text-align: center;
+
+    padding: 0.5rem;
+    margin: 1rem;
+    background-color: #fff;
+  }
+  .form-control {
+    height: 2rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.25rem;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    margin: 0.5rem 0;
+  }
+}
+/* laptop screens*/
+@media only screen and (min-width: 1186px) {
+  .food {
+    max-width: 20%;
+    margin: 1.2rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+  #logo-p {
+    font-size: 3.6rem;
+  }
+}
+/* wider screens*/
+@media only screen and (min-width: 1430px) {
+  #logo-p {
+    font-size: 4rem;
+  }
+  
+  .food{
+    font-size: 1.8rem;
+  }
+}
+/* smaller mobile screens*/
+@media only screen and (max-width: 433px) {
+  #logo-p {
+    max-width: 40%;
+    font-size: 0.9rem;
+  }
+  #social {
+    max-width: 60px;
+    text-align: right;
+  }
+  ul {
+    font-size: 90%;
+  }
+  #li1,
+  #li2 {
+    margin: 0 0.7rem 0 0;
+  }
+
+  .food-image {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #nav-bar {
+    display: block;
+    text-align: right;
+  }
+  ul {
+    display: flex;
+    font-size: 90%;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-self: flex-end;
+    text-align: right;
+    margin: 0.6rem;
+  }
+  #li1,
+  #li2 {
+    margin: 0;
+  }
+  #logo-p {
+    max-width: 90%;
+  }
+  #social {
+    left: -110px;
+    top: 90px;
+  }
+}
